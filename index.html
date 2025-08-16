@@ -1,0 +1,26 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>はじめてのゲーム</title>
+  <style>
+    body { text-align: center; font-family: sans-serif; }
+    img { width: 200px; margin: 20px; }
+    button { font-size: 20px; padding: 10px; }
+  </style>
+</head>
+<body>
+  <h1>いないいないバァ！</h1>
+  <img src="cat.jpeg" id="catImage">
+  <br>
+  <button onclick="changeImage()">クリックしてね！</button>
+
+  <script>
+    function changeImage() {
+      const img = document.getElementById("catImage");
+      img.src = "cat2.jpeg";
+    }
+  </script>
+</body>
+</html>
