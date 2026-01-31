@@ -19,7 +19,11 @@
   <script>
     function changeImage() {
       const img = document.getElementById("catImage");
-      img.src = "cat2.jpeg";
+      if (img.src.includes("cat2.jpeg")) {
+        img.src = "cat.jpeg";
+      } else {
+        img.src = "cat2.jpeg";
+      }
     }
   </script>
 </body>
